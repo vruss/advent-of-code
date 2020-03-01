@@ -28,10 +28,17 @@ namespace aoc_2015_day_1
                 {
                     floor--;
                 }
+
+                // (PART 2) Check if santa is at the basement for the first time
+                if (floor == -1)
+                {
+                    Console.WriteLine("Santa first entered basement at position {0}", ++i);
+                    break;
+                }
             }
 
             // Write resulting floor
-            Console.WriteLine(floor);
+            Console.WriteLine("Santa exited the apartment at floor {0}", floor);
         }
     }
 }
