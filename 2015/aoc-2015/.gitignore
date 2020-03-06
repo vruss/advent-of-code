@@ -1,2 +1,4 @@
 # Default ignored files
 /.idea.aoc-2015/.idea/workspace.xml
+**/**/obj/
+/.idea/.idea.aoc-2015/.idea/workspace.xml
