@@ -37,4 +37,17 @@ public class RockPaperScissorsGameFactoryTests
 
 		Assert.AreEqual(expected, rockPaperScissorsGame.Result());
 	}
+
+	[TestMethod]
+	[DataRow("A Y", 4)]
+	[DataRow("B X", 1)]
+	[DataRow("C Z", 7)]
+	public void CanCreateGames2(string input, int expected)
+	{
+		var sut = new RockPaperScissorsGameFactory();
+
+		var rockPaperScissorsGame = sut.Create2(input);
+
+		Assert.AreEqual(expected, rockPaperScissorsGame.Result());
+	}
 }

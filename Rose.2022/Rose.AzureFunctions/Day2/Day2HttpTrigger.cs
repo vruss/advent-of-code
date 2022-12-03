@@ -36,13 +36,22 @@ public class Day2HttpTrigger
 		var response = await new StreamReader(req.Body).ReadToEndAsync();
 		var newLine = this.newLineResolver.Resolve(response);
 
-		var rockPaperScissorsGames = response
+		var games = response
 			.Split(newLine)
+			.ToList();
+
+		var rockPaperScissorsGames1 = games
 			.Select(x => this.paperScissorsGameFactory.Create(x));
 
-		var totalScore = rockPaperScissorsGames
+		var totalScore1 = rockPaperScissorsGames1
 			.Sum(x => x.Result());
 
-		return new OkObjectResult($"Answer to first: {totalScore}\nAnswer to second: NA");
+		var rockPaperScissorsGames2 = games
+			.Select(x => this.paperScissorsGameFactory.Create2(x));
+
+		var totalScore2 = rockPaperScissorsGames2
+			.Sum(x => x.Result());
+
+		return new OkObjectResult($"Answer to first: {totalScore1}\nAnswer to second: {totalScore2}");
 	}
 }
