@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rose.AzureFunctions", "Rose
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rose.AzureFunctions.Tests", "Rose.AzureFunctions.Tests\Rose.AzureFunctions.Tests.csproj", "{48054F11-5F0B-4B69-88E9-2AB1076C3864}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rose.WebApp", "Rose.WebApp\Rose.WebApp.csproj", "{BE829E9B-7840-43F9-9CD7-069DF0739990}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{48054F11-5F0B-4B69-88E9-2AB1076C3864}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48054F11-5F0B-4B69-88E9-2AB1076C3864}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48054F11-5F0B-4B69-88E9-2AB1076C3864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE829E9B-7840-43F9-9CD7-069DF0739990}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE829E9B-7840-43F9-9CD7-069DF0739990}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE829E9B-7840-43F9-9CD7-069DF0739990}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE829E9B-7840-43F9-9CD7-069DF0739990}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
